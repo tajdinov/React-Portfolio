@@ -1,0 +1,225 @@
+:root {
+    --dark: #212121;
+    --grey: #323232;
+    --blue: #0D7377;
+    --teal: #14ffec;
+}
+
+body {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(145deg, var(--dark), var(--grey));
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.myName {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: var(--teal);
+    font-size: 2em;
+}
+
+.myName span {
+    user-select: none !important;
+    transition: all 0.6s ease;
+}
+
+.myName span:hover {
+    color: var(--blue);
+}
+
+.navbar {
+    width: 100vw;
+    height: 100px;
+    padding: 20px;
+
+}
+
+.nav-link {
+    margin: 0 5px;
+    font-size: 1.5em;
+    transition: all 1s ease;
+}
+
+.navbar-nav .nav-item {
+    transition: all 1s ease;
+}
+
+.navbar-nav .nav-item .active {
+    color: var(--teal);
+    transform: scale(1.1);
+    border-bottom: 0.1px solid #0D7377;
+}
+
+.nav-link:hover {
+    color: var(--blue);
+    transform: scale(1.1);
+}
+
+.aboutMeText {
+    color: var(--teal);
+    font-weight: light;
+}
+
+.container {
+    width: 100vw;
+    position: relative;
+    margin-top: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.container .card {
+    position: relative;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+    background: transparent;
+}
+
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.7s;
+}
+
+.container .card .face1 {
+    position: relative;
+    background: linear-gradient(145deg, var(--dark), var(--grey));
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(0px);
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px var(--dark),
+        -10px -10px 20px var(--grey);
+    ;
+
+}
+
+.container .card .face2 {
+    border-radius: 8px;
+}
+
+.container .card:hover .face.face1 {
+    transform: translateY(0px);
+    box-shadow:
+        inset 0 0 60px whitesmoke,
+        inset 20px 0 80px var(--blue),
+        inset -20px 0 80px var(--teal),
+        inset 20px 0 300px var(--blue),
+        inset -20px 0 300px var(--teal),
+        0 0 50px var(--dark),
+        -10px 0 80px var(--blue),
+        10px 0 80px var(--teal);
+}
+
+.container .card .face.face1 .content {
+    opacity: .2;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.container .card .face.face1 .content i {
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+}
+
+.container .card .face.face1 .content h3 {
+    font-size: 1em;
+    color: var(--teal);
+    text-align: center;
+}
+
+.container .card .face.face1 .content a {
+    transition: .5s;
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #333;
+
+    transform: translateY(-200px);
+}
+
+.container .card:hover .face.face2 {
+    transform: translateY(-10px);
+}
+
+.container .card .face.face2 .content p,
+a {
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container .card .face.face2 .content a {
+    text-decoration: none;
+    color: #282c34;
+    box-sizing: border-box;
+    outline: 1px #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+}
+
+.container .card .face.face2 .content a:hover {
+    background: var(--blue);
+    color: var(--teal);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.ContactForm {
+    width: 100vw;
+    position: relative;
+    margin-top: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border: none;
+
+
+}
+
+Form {
+
+    background: linear-gradient(145deg, var(--dark), var(--grey));
+    width: 30vw;
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px var(--dark),
+        -10px -10px 20px var(--grey);
+
+}
+
+#form-input-control-email,
+#form-input-control-last-name,
+#form-textarea-control-opinion {}
