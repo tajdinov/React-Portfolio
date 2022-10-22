@@ -5,6 +5,8 @@ function NavTabs({ currentPage, handlePageChange }) {
     <div>
     <nav className="navbar navbar-expand-sm navbar-light">
       <div className='myName'>
+        <span className='letter'>R</span>
+        <span className='letter'>.</span>
         <span className='letter'>T</span>
         <span className='letter'>a</span>
         <span className='letter'>z</span>
