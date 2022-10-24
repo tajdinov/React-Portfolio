@@ -1,90 +1,77 @@
 import React from "react";
+import VanillaTilt from "vanilla-tilt";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
+
 
 
 const Portfolio = () => {
+    VanillaTilt.init(document.querySelectorAll(".box"),
+{
+    max: 25,
+    speed: 400,
+    easing: "cubic-bezier(.03,.98,.52,.99)",
+    perspective: 500,
+    transition: true
+});
     return (
-
-<div className="container container-xs d-flex justify-content-evenly">
-    <div className="card">
-        <div className="face face1">
-            <div className="content">
-            <h3>Project 1</h3>
-            </div>
-        </div>
-        <div className="face face2">
-            <div className="content">
-                <p>some text</p>
-                <a href="https://github.com/SamMarch/DnD-Character-Generator.git" type="button">Read More</a>
-            </div>
+<div className="wrapper">
+    <div className="box">
+        <div className="description">
+            <h2>Project 1</h2>
+            <p>some text</p>
+            <ul className="list">
+                <li><a href="https://github.com/tajdinov"><FontAwesomeIcon icon={faGithub} /></a></li>
+            </ul>
         </div>
     </div>
-    <div className="card">
-        <div className="face face1">
-            <div className="content">
-            <h3>Project 2</h3>
-            </div>
-        </div>
-        <div className="face face2">
-            <div className="content">
-                <p>some text</p>
-                <a href="https://github.com/SamMarch/DnD-Character-Generator.git" type="button">Read More</a>
-            </div>
+    <div className="box">
+        <div className="description">
+            <h2>Project 2</h2>
+            <p>some text</p>
+            <ul className="list">
+                <li><a href="https://github.com/tajdinov"><FontAwesomeIcon icon={faGithub} /></a></li>
+            </ul>
         </div>
     </div>
-    <div className="card">
-        <div className="face face1">
-            <div className="content">
-            <h3>Project 3</h3>
-            </div>
-        </div>
-        <div className="face face2">
-            <div className="content">
-                <p>some text</p>
-                <a href="https://github.com/SamMarch/DnD-Character-Generator.git" type="button">Read More</a>
-            </div>
+    <div className="box">
+        <div className="description">
+            <h2>Project 3</h2>
+            <p>some text</p>
+            <ul className="list">
+                <li><a href="https://github.com/tajdinov"><FontAwesomeIcon icon={faGithub} /></a></li>
+            </ul>
         </div>
     </div>
-    <div className="card">
-        <div className="face face1">
-            <div className="content">
-            <h3>Project 4</h3>
-            </div>
-        </div>
-        <div className="face face2">
-            <div className="content">
-                <p>some text</p>
-                <a href="https://github.com/SamMarch/DnD-Character-Generator.git" type="button">Read More</a>
-            </div>
+    <div className="box">
+        <div className="description">
+            <h2>Project 4</h2>
+            <p>some text</p>
+            <ul className="list">
+                <li><a href="https://github.com/tajdinov"><FontAwesomeIcon icon={faGithub} /></a></li>
+            </ul>
         </div>
     </div>
-    <div className="card">
-        <div className="face face1">
-            <div className="content">
-            <h3>Project 4</h3>
-            </div>
-        </div>
-        <div className="face face2">
-            <div className="content">
-                <p>some text</p>
-                <a href="https://github.com/SamMarch/DnD-Character-Generator.git" type="button">Read More</a>
-            </div>
+    <div className="box">
+        <div className="description">
+            <h2>Project 5</h2>
+            <p>some text</p>
+            <ul className="list">
+                <li><a href="https://github.com/tajdinov"><FontAwesomeIcon icon={faGithub} /></a></li>
+            </ul>
         </div>
     </div>
-    <div className="card">
-        <div className="face face1">
-            <div className="content">
-            <h3>Project 4</h3>
-            </div>
-        </div>
-        <div className="face face2">
-            <div className="content">
-                <p>some text</p>
-                <a href="https://github.com/SamMarch/DnD-Character-Generator.git" type="button">Read More</a>
-            </div>
+    <div className="box">
+        <div className="description">
+            <h2>Project 6</h2>
+            <p>some text</p>
+            <ul className="list">
+                <li><a href="https://github.com/tajdinov"><FontAwesomeIcon icon={faGithub} /></a></li>
+            </ul>
         </div>
     </div>
 </div>
-
 )};
 
 export default Portfolio;
