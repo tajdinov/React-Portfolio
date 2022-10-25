@@ -23,21 +23,23 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
+    <div className="contactMe">
     <form className="contactForm"  onSubmit={handleSubmit}>
-      <div>
+      <div className="formInput">
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" required />
       </div>
-      <div>
+      <div className="formInput">
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" required />
       </div>
-      <div>
+      <div className="formInput">
         <label htmlFor="message">Message:</label>
         <textarea id="message" required />
       </div>
-      <button type="submit">{status}</button>
+      <button className="btnSubmit" type="submit">{status}</button>
     </form>
+    </div>
   );
 };
 

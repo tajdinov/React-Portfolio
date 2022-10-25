@@ -1,6 +1,7 @@
 import React from 'react';
 
 function NavTabs({ currentPage, handlePageChange }) {
+
   return (
     <div>
     <nav className="navbar navbar-expand-sm navbar-light">
@@ -30,6 +31,15 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <a
+          href="#Portfolio"
+          onClick={() => handlePageChange('Portfolio')}
+          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+        >
+          Portfolio
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
           href="#Contacts"
           onClick={() => handlePageChange('Contacts')}
           className={currentPage === 'Contacts' ? 'nav-link active' : 'nav-link'}
@@ -38,22 +48,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       <li className="nav-item">
-        <a
-          href="#Experience"
-          onClick={() => handlePageChange('Experience')}
-          className={currentPage === 'Experience' ? 'nav-link active' : 'nav-link'}
-        >
-          Experience
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#Portfolio"
-          onClick={() => handlePageChange('Portfolio')}
-          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-        >
-          Portfolio
-        </a>
+        <a href="https://drive.google.com/file/d/11k5LfsVcDYHuCnvDQM5MKgfRV5974Hw_/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav-link" >Resume</a>
       </li>
     </ul>
     </div>
