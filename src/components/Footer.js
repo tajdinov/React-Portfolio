@@ -6,9 +6,9 @@ import { faGithub, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-
 const Footer = () => {
     return (
     <div className="footer">
-        <a href="https://github.com/tajdinov"><FontAwesomeIcon icon={faGithub} /></a>
-        <a href="https://www.facebook.com/roman.tazhdynov"><FontAwesomeIcon icon={faFacebook} /></a>
-        <a href="https://www.instagram.com/tajdinov"><FontAwesomeIcon icon={faInstagram} /></a>
+        <a href="https://github.com/tajdinov" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+        <a href="https://www.facebook.com/roman.tazhdynov" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
+        <a href="https://www.instagram.com/tajdinov" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
     </div>
     )
 };

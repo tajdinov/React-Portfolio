@@ -123,45 +123,51 @@ body {
     position: relative;
     width: 280px;
     height: 400px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 20px var(--dark),
+        -10px -10px 20px var(--grey);
     border-radius: 15px;
     margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid var(--grey);
+    border-left: 1px solid var(--grey);
     backdrop-filter: blur(5px);
     transform-style: preserve-3d;
     transform: perspective(800px);
 }
 
+.description {
+    position: relative;
+    justify-content: center;
+    height: 380px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
 .description h2 {
-    color: var(--teal);
-    font-size: 2.5em;
-    text-align: center;
-}
-
-.list li {
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-}
-
-.list li {
-    color: var(--teal);
+    color: var(--blue);
     font-size: 1.5em;
-    transition: all 0.3s ease;
+    text-align: center;
+    margin: 20px;
+    transition: all 0.5s ease;
 }
 
-.list li:hover {
-    transform: translate3d(0, -10px, 20px);
+.description h2:hover {
     color: var(--teal);
 }
 
 .description p {
     color: var(--blue);
-    margin-right: 20px 10px;
+    margin: 0 20px;
+    text-align: center;
+    cursor: default;
+    transition: all 0.5s ease;
+}
+
+.description p:hover {
+    color: var(--teal);
 }
 
 .contactForm {
@@ -195,7 +201,9 @@ Form {
 
 .footer {
     position: fixed;
-    bottom: 10px;
+    height: 100px;
+    width: 30px;
+    bottom: 60px;
     display: block;
     justify-content: center;
 }
@@ -210,4 +218,31 @@ Form {
 
 .footer a:hover {
     color: var(--teal);
+}
+
+.description a {
+    margin-left: 120px;
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 2em;
+    transition: all 0.5s ease;
+}
+
+.description a:hover {
+    color: var(--teal);
+    transform: translate3d(0, -5px, 10px);
+}
+
+.gLink a {
+    position: fixed;
+    bottom: 10px;
+    display: block;
+    justify-content: center;
+}
+
+.preview {
+    max-width: 250px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    opacity: 80%;
 }
