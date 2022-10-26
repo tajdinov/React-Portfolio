@@ -1,15 +1,23 @@
 import React, { useState } from 'react';
+import { lazy,Suspense } from 'react';
 import NavTabs from './Navbar';
-import Home from './Home';
+//import Home from './Home';
 import ContactForm from './pages/Contacts';
 import Experience from './pages/Experience';
 import Portfolio from './pages/Portfolio';
+const Home = lazy(() => import('./Home'));
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
   const renderPage = () => {
     if (currentPage === 'Home') {
-      return <Home />;
+      return (
+        <div>
+        <Suspense fallback={<div>loading...</div>}>
+            <Home />
+        </Suspense>
+        </div>
+      )
     }
     if (currentPage === 'Contacts') {
       return <ContactForm />;

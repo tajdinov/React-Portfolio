@@ -1,10 +1,11 @@
 import React from "react";
 import avatar from "../assets/avatar.jpeg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Home = () => {
     return (
         <div className="container aboutContainer">
-            <img src={avatar} alt="Avatar" className="avatar"></img>
+            <LazyLoadImage src={avatar} alt="Avatar" width={600} className="avatar" />
             <p className="aboutMeText justify-content-evenly col-lg-9 col-xm-12"> 
             Aspiring full-stack web developer utilising marketing and business background to build a more intuitive user experience on the web. <br></br>
             <br></br>
