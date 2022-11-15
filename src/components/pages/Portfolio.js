@@ -10,6 +10,7 @@ import project3 from "../../assets/users.png";
 import project4 from "../../assets/download.png";
 import project5 from "../../assets/main.png";
 import project6 from "../../assets/welcome.png";
+import project7 from "../../assets/recordstore.png";
 
 
 
@@ -30,6 +31,8 @@ const [projects,setProjects] = useState([
     { title: 'PWA Text Editor', body: 'Single page text editor that runs in the browser as well as offline.', image: project4, link: 'https://github.com/tajdinov/Social-Network-API.git', id: 4 },
     { title: 'Tech Blog', body: 'CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.', image: project5, link: 'https://github.com/tajdinov/Tech-Blog.git', id: 5 },
     { title: 'Employee-Tracker', body: "Command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.", image: project6, link: 'https://github.com/tajdinov/Employee-Tracker.git', id: 6 },
+    { title: 'Record-Store', body: "An e-commerce store for people who love music, DJs, collectors and those who just want to be on track with the latest news.", image: project7, link: 'https://github.com/tajdinov/Record-Store.git', id: 6 },
+
 ])
 
     return (
