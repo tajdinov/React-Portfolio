@@ -3,7 +3,7 @@
 ## Description
 We were tasked to update an existing portfolio or create a new portfolio using React. While the project was challening , it was overall very enjoyable. One thing i enjoyed about React is the array of react extensions that are available. This is great as it makes for a unique user experience. 
 
-[Click here to view the application](https://github.com/tajdinov/React-Portfolio.git) 
+[Click here to view the application](https://tajdinov.github.io/React-Portfolio/) 
 
 ## Table of Contents
 - [Features](#features)
